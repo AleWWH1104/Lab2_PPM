@@ -1,7 +1,6 @@
 fun calcularProm(listNum: List<Int>): Int{
     val suma =  listNum.reduce {x, y -> x + y}
-    val cant = listNum.size
-    return suma/cant
+    return suma/listNum.size
 }
 
 fun isPalindrome(texto: String): Boolean{
@@ -36,5 +35,4 @@ fun main() {
     //5 ejercicio
     val multResult = performOperation(5, 3) { x, y -> x * y }
     println("Multiplicación: $multResult")
-
 }
